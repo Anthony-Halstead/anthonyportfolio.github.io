@@ -32,8 +32,8 @@
             </a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
+                <a href="about.html">About</a>
                 <a href="portfolio.html" class="active">Projects</a>
-                <!-- <a href="blog.html">Blog</a> -->
                 <a href="contact.html">Contact</a>
             </div>
             <button class="mobile-menu-btn">
@@ -49,24 +49,26 @@
     <div class="portfolio-container">
         <div class="portfolio-header">
             <h1>My Projects</h1>
-            <p>A comprehensive showcase of my game development journey</p>
+            <p>A showcase of my game development journey</p>
         </div>
 
         <div class="portfolio-filters">
             <button class="filter-btn">All Projects</button>
             <button class="filter-btn">Unreal Engine</button>
             <button class="filter-btn">Unity</button>
+            <button class="filter-btn">Custom Engine</button>
+            <button class="filter-btn">Tools</button>
         </div>
 
         <div class="projects-grid">
             <!-- Untitled FPS -->
             <div class="project-card" data-project="untitled fps">
                 <div class="project-image-container">
-                    <img src="/images/FPSCover.png" alt="UNTITLED FPS">
+                    <img src="images/FPSCover.png" alt="UNTITLED FPS">
                 </div>
                 <div class="project-info">
                     <div class="project-tags">
-                        <div class="project-tag">Unity3D</div>
+                        <div class="project-tag">Unity</div>
                         <div class="project-tag">FPS</div>
                         <div class="project-tag">C#</div>
                     </div>
@@ -77,11 +79,11 @@
             <!-- Murder At Hollowstone Manor Featured Project -->
             <div class="project-card" data-project="mhm">
                 <div class="project-image-container">
-                    <img src="/images/MHMCover.png" alt="Murder At Hollowstone Manor">
+                    <img src="images/MHMCover.png" alt="Murder At Hollowstone Manor">
                 </div>
                 <div class="project-info">
                     <div class="project-tags">
-                        <div class="project-tag">Unity3D</div>
+                        <div class="project-tag">Unity</div>
                         <div class="project-tag">Puzzle</div>
                         <div class="project-tag">C#</div>
                     </div>
@@ -92,7 +94,7 @@
             <!-- Renegade Featured Project -->
             <div class="project-card" data-project="renegade">
                 <div class="project-image-container">
-                    <img src="/images/RenegadeCover.png" alt="Renegade">
+                    <img src="images/RenegadeCover.png" alt="Renegade">
                 </div>
                 <div class="project-info">
                     <div class="project-tags">
@@ -104,6 +106,21 @@
                     </div>
                     <h3>Renegade</h3>
                     <p>An arcade top-down bullet hell. Defeat all the bosses to win and get the highest score.</p>
+                </div>
+            </div>
+            <!-- MeshForge Featured Project -->
+            <div class="project-card" data-project="mesh forge">
+                <div class="project-image-container">
+                    <img src="images/MeshForgeCover.png" alt="MeshForge">
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <div class="project-tag">Unity</div>
+                        <div class="project-tag">Tools</div>
+                        <div class="project-tag">C#</div>
+                    </div>
+                    <h3>MeshForge</h3>
+                    <p>MeshForge is a tool aimed to bridge the gap between those with little to no experience in 3D modeling and the ability to create modular characters and meshes.</p>
                 </div>
             </div>
         </div>
@@ -119,15 +136,459 @@
                     </svg>
                 </button>
             <div class="modal-body">
-                <!-- Neptune Ocean System Details -->
-                <div class="project-details" data-project="neptune">
+                <!-- Untitled FPS Details -->
+                <div class="project-details" data-project="untitled fps">
                     <div class="project-header">
-                        <img src="/images/NeptuneCover.png" alt="Neptune Ocean System">
+                        <img src="images/FPSCover.png" alt="Untitled FPS Cover">
                         <div>
-                            <h2>Neptune – Advanced Ocean System</h2>
+                            <h2>Untitled FPS – Large Scale Combat Prototype</h2>
                             <div class="tags">
-                                <span class="tag">Unreal Engine</span>
-                                <span class="tag">Technical Art</span>
+                                <span class="tag">Unity</span>
+                                <span class="tag">FPS</span>
+                                <span class="tag">C#</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-container">
+                        <div class="gallery-flex" style="display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto 32px auto; gap: 16px; flex-direction: column;">
+                            <div style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 16px;">
+                                <button class="gallery-btn prev-btn" aria-label="Previous" style="background: none; border: none; cursor: pointer; padding: 0 8px; height: 48px; display: flex; align-items: center;">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#6e8efb">
+                                        <polyline points="15 18 9 12 15 6"></polyline>
+                                    </svg>
+                                </button>
+
+                                <div class="gallery-view" style="flex: 1 1 0; display: flex; align-items: center; justify-content: center; min-width: 0;">
+                                    <!-- Single gallery item: cover image -->
+                                    <div class="gallery-item" data-type="image" style="display:block; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
+                                        <img src="images/FPSCover.png" alt="Untitled FPS Screenshot" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+                                    </div>
+                                </div>
+
+                                <button class="gallery-btn next-btn" aria-label="Next" style="background: none; border: none; cursor: pointer; padding: 0 8px; height: 48px; display: flex; align-items: center;">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#6e8efb">
+                                        <polyline points="9 6 15 12 9 18"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <!-- Thumbnails Bar -->
+                            <div class="gallery-thumbnails" style="display: flex; justify-content: center; gap: 12px; margin-top: 8px;">
+                                <div class="gallery-thumbnail" data-index="0" data-type="image">
+                                    <img src="images/FPSCover.png" alt="Untitled FPS Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-full-description">
+                        <h3>🎯 Project Overview</h3>
+                        <p>
+                            Untitled FPS is a first-person shooter prototype built in Unity that focuses on traditional FPS combat
+                            in a large outdoor environment. The core loop combines moment-to-moment gunplay with objective-based
+                            progression across a sizeable level, with enemy encounters paced around key landmarks and routes.
+                        </p>
+                        <p>
+                            I treated this project as a sandbox for learning FPS fundamentals in Unity: combat feel, encounter design,
+                            AI behavior, and performance-aware level layout. :contentReference[oaicite:0]{index=0}
+                        </p>
+
+                        <h3>🧩 The Problem</h3>
+                        <p>
+                            The design problem was essentially:
+                        </p>
+                        <p>
+                            <em>
+                                “How do you build a readable, performant FPS level with AI-driven encounters and objective flow,
+                                using Unity, in a way that scales to a large environment without overwhelming the player or the engine?”
+                            </em>
+                        </p>
+
+                        <h4>Key challenges:</h4>
+                        <ul>
+                            <li>Designing a large, explorable space that still funnels players through meaningful combat beats</li>
+                            <li>Building a flexible spawn system that can drive encounters without hard-coding every enemy</li>
+                            <li>Creating AI that can navigate, engage, and pressure the player without feeling unfair</li>
+                            <li>Keeping performance stable as enemy counts and view distances increase</li>
+                        </ul>
+
+                        <h3>🛠️ What I Built</h3>
+                        <ul>
+                            <li>
+                                <strong>Level layout & encounter pacing</strong> – Blocked out the main environment and tuned sightlines,
+                                cover, and traversal routes to create distinct combat pockets (open fields, chokepoints, flanking paths).
+                            </li>
+                            <li>
+                                <strong>Spawn & wave system</strong> – Implemented a spawn controller that supports:
+                                <ul>
+                                    <li>Configurable spawn points and groups tied to objectives or triggers</li>
+                                    <li>Waves that can escalate based on player progress</li>
+                                    <li>Simple knobs for iteration (enemy counts, delays, composition)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>AI & boss behavior</strong> – Built enemy and boss behaviors including:
+                                <ul>
+                                    <li>Basic state-based logic (patrol, chase, attack, search)</li>
+                                    <li>Ranged combat with line-of-sight checks and simple cover usage</li>
+                                    <li>Boss behavior tuned to force movement and use of the arena space</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Gameplay feel & tuning</strong> – Iterated on weapon feel (rate of fire, recoil, damage tuning),
+                                hit feedback, and time-to-kill to keep combat readable and responsive.
+                            </li>
+                            <li>
+                                <strong>Performance & stability passes</strong> – Profiling-driven clean-up:
+                                <ul>
+                                    <li>Reduced unnecessary updates on enemies when off-screen or inactive</li>
+                                    <li>Adjusted spawn counts and distances to keep framerate smooth during heavy combat</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h3>🎮 Design & Technical Principles</h3>
+                        <ul>
+                            <li>
+                                <strong>Readable combat spaces</strong> – Clear silhouettes and cover placement so players quickly
+                                understand where threats are coming from and where they can reposition.
+                            </li>
+                            <li>
+                                <strong>Encounter-first level design</strong> – Built the environment around specific fights rather
+                                than dropping enemies into a generic space.
+                            </li>
+                            <li>
+                                <strong>Iterative tuning</strong> – Used quick iteration loops on spawn timings, enemy health, and
+                                player damage to get the “feel” right before adding extra content.
+                            </li>
+                            <li>
+                                <strong>Scalability</strong> – Structured the spawn system so new encounters can be added via data
+                                rather than new code whenever possible.
+                            </li>
+                        </ul>
+
+                        <h3>✅ Outcome</h3>
+                        <ul>
+                            <li>Delivered a playable FPS prototype with objective-driven progression across a large environment</li>
+                            <li>Demonstrated ability to own both level design and core gameplay programming for an FPS</li>
+                            <li>Created a foundation that could be extended into a more complete campaign or wave-based mode</li>
+                        </ul>
+
+                        <h3>⚙️ Tools & Technologies</h3>
+                        <ul>
+                            <li>Unity (URP), C#</li>
+                            <li>Unity physics, collision, and basic character controller-style movement</li>
+                            <li>Simple spawn management and AI logic implemented in C# scripts</li>
+                            <li>GitHub for source control and iteration history</li>
+                        </ul>
+                    </div>
+
+                    <div class="portfolio-links">
+                        <a href="https://github.com/Anthony-Halstead/FPS" target="_blank" class="portfolio-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                            GitHub Repository
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Murder At HollowStone Manor Details -->
+                <div class="project-details" data-project="mhm">
+                    <div class="project-header">
+                        <img src="images/MHMCover.png" alt="Murder At Hollowstone Manor">
+                        <div>
+                            <h2>Murder At Hollowstone Manor – Mystery Puzzle Game</h2>
+                            <div class="tags">
+                                <span class="tag">Unity</span>
+                                <span class="tag">Puzzle</span>
+                                <span class="tag">3D</span>
+                                <span class="tag">C#</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-container">
+                        <div class="gallery-flex" style="display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto 32px auto; gap: 16px; flex-direction: column;">
+                            <div style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 16px;">
+                                <button class="gallery-btn prev-btn" aria-label="Previous" style="background: none; border: none; cursor: pointer; padding: 0 8px; height: 48px; display: flex; align-items: center;">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#6e8efb">
+                                        <polyline points="15 18 9 12 15 6"></polyline>
+                                    </svg>
+                                </button>
+
+                                <div class="gallery-view" style="flex: 1 1 0; display: flex; align-items: center; justify-content: center; min-width: 0;">
+                                    <!-- Single gallery item: cover image -->
+                                    <div class="gallery-item" data-type="image" style="display:block; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
+                                        <img src="images/MHMCover.png" alt="Murder At Hollowstone Manor Screenshot" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+                                    </div>
+                                </div>
+
+                                <button class="gallery-btn next-btn" aria-label="Next" style="background: none; border: none; cursor: pointer; padding: 0 8px; height: 48px; display: flex; align-items: center;">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#6e8efb">
+                                        <polyline points="9 6 15 12 9 18"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <!-- Thumbnails Bar -->
+                            <div class="gallery-thumbnails" style="display: flex; justify-content: center; gap: 12px; margin-top: 8px;">
+                                <div class="gallery-thumbnail" data-index="0" data-type="image">
+                                    <img src="images/MHMCover.png" alt="Murder At Hollowstone Manor Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-full-description">
+                        <h3>🎯 Project Overview</h3>
+                        <p>
+                            <strong>Murder At Hollowstone Manor</strong> is a light-hearted first-person mystery/puzzle game built in Unity.
+                            The player explores an old manor, investigates a murder, finds clues, and ultimately reports to the police who
+                            they believe committed the crime. The focus is on approachable puzzle design, readable UI, and a tightly scoped
+                            detective loop that can be completed in a single sitting.
+                        </p>
+
+                        <h3>🧩 The Core Experience</h3>
+                        <p>
+                            The game is built around a simple question:
+                            <em>
+                                “Can we make a short, replayable mystery experience where players feel like they’re actually piecing together
+                                a case, rather than just following objective markers?”
+                            </em>
+                        </p>
+
+                        <h4>Core pillars:</h4>
+                        <ul>
+                            <li>Exploration of a small but dense manor environment</li>
+                            <li>Puzzles that are readable without heavy tutorials</li>
+                            <li>A clue system that tracks player discoveries in-game</li>
+                            <li>A final accusation moment where the player commits to their theory</li>
+                        </ul>
+
+
+                        <h3>🛠️ My Contributions</h3>
+                        <ul>
+                            <li><strong>Level Design</strong> – Blocked out and iterated on the manor layout to support a natural investigation path, backtracking, and sightlines that guide the player without explicit waypoints.</li>
+                            <li><strong>Puzzle System</strong> – Designed and implemented the core puzzle framework in C#, including interaction logic, state tracking, and feedback for success/failure.</li>
+                            <li><strong>All In-Game Puzzles</strong> – Authored the individual puzzles (locks, combinations, environmental clues), including hint structure and how each one ties into the overall case.</li>
+                            <li><strong>Clue System & UI</strong> – Built the clue log UI that records key discoveries, making it easy for players to review suspects, motives, and evidence before making their final choice.</li>
+                            <li><strong>Inventory System</strong> – Implemented a lightweight inventory for holding keys, evidence items, and puzzle components, with tooltip support and basic categorization.</li>
+                            <li><strong>Crafting System</strong> – Added a small crafting layer for combining certain items (e.g., assembling evidence or tools) to reinforce the “detective work” fantasy.</li>
+                            <li><strong>Opening Cinematic & Main Menu UI</strong> – Built the intro sequence that sets up the murder, handled camera scripting, timing, and transitions into the playable scene, plus the main menu and options layout.</li>
+                        </ul>
+
+                        <h3>🎮 Design & Technical Details</h3>
+                        <ul>
+                            <li>Interaction system based on raycasts and tagged interactables, supporting context-sensitive prompts and highlight states.</li>
+                            <li>Data-driven puzzle configuration using ScriptableObjects (puzzle parameters, combinations, required items).</li>
+                            <li>Modular UI panels for inventory, clues, and pause/options so they can be repurposed for future projects.</li>
+                            <li>Simple state machine for the overall case flow (investigating → clue gathering → accusation → resolution).</li>
+                            <li>Use of post-processing, lighting, and audio cues to subtly direct player attention to important rooms and objects.</li>
+                        </ul>
+
+                        <h3>✅ Outcome</h3>
+                        <ul>
+                            <li>Delivered a complete, playable mystery experience with a full start-to-finish loop.</li>
+                            <li>Showcased my ability to own both <strong>systems design</strong> (puzzles, inventory, clue tracking) and <strong>player-facing UX</strong> (UI, flow, feedback).</li>
+                            <li>Provided a strong portfolio piece demonstrating Unity gameplay code, level design sensibilities, and UI implementation working together.</li>
+                        </ul>
+
+                        <h3>⚙️ Tools & Technologies</h3>
+                        <ul>
+                            <li>Unity (3D pipeline, scene management, lighting)</li>
+                            <li>C# (interaction system, puzzles, inventory, UI logic)</li>
+                            <li>Unity UI Toolkit / UGUI for menus, clue log, and in-game HUD</li>
+                            <li>Git / GitHub for version control and collaboration</li>
+                        </ul>
+                    </div>
+
+                    <div class="portfolio-links">
+                        <a href="https://github.com/Anthony-Halstead/CodeMurderMystery" target="_blank" class="portfolio-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                            GitHub Repository
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Renegade Details -->
+                <div class="project-details" data-project="renegade">
+                    <div class="project-header">
+                        <img src="images/RenegadeCover.png" alt="Renegade">
+                        <div>
+                            <h2>Renegade – Top-Down Bullet Hell (Custom Engine)</h2>
+                            <div class="tags">
+                                <span class="tag">Custom Engine</span>
+                                <span class="tag">C</span>
+                                <span class="tag">C++</span>
+                                <span class="tag">Vulkan</span>
+                                <span class="tag">Bullet Hell</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-container">
+                        <div class="gallery-flex" style="display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto 32px auto; gap: 16px; flex-direction: column;">
+                            <div style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 16px;">
+                                <button class="gallery-btn prev-btn" aria-label="Previous" style="background: none; border: none; cursor: pointer; padding: 0 8px; height: 48px; display: flex; align-items: center;">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#6e8efb">
+                                        <polyline points="15 18 9 12 15 6"></polyline>
+                                    </svg>
+                                </button>
+
+                                <div class="gallery-view" style="flex: 1 1 0; display: flex; align-items: center; justify-content: center; min-width: 0;">
+                                    <!-- Only one gallery item for now (cover image) -->
+                                    <div class="gallery-item" data-type="image" style="display:block; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
+                                        <img src="images/RenegadeCover.png" alt="Renegade Gameplay" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+                                    </div>
+                                </div>
+
+                                <button class="gallery-btn next-btn" aria-label="Next" style="background: none; border: none; cursor: pointer; padding: 0 8px; height: 48px; display: flex; align-items: center;">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#6e8efb">
+                                        <polyline points="9 6 15 12 9 18"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <!-- Thumbnails Bar -->
+                            <div class="gallery-thumbnails" style="display: flex; justify-content: center; gap: 12px; margin-top: 8px;">
+                                <div class="gallery-thumbnail" data-index="0" data-type="image">
+                                    <img src="images/RenegadeCover.png" alt="Renegade Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-full-description">
+                        <h3>🎯 Project Overview</h3>
+                        <p>
+                            Renegade is a fast-paced top-down bullet hell built on a custom C/C++ engine using Vulkan for rendering.
+                            The goal of the project was to ship a complete arcade-style experience while building out real engine systems:
+                            rendering, audio, level loading, and AI behavior, instead of relying on an off-the-shelf engine.
+                        </p>
+                        <p>
+                            The game focuses on tight boss encounters, dense projectile patterns, and responsive player controls, all driven
+                            by systems that were designed and implemented at the engine level.
+                        </p>
+
+                        <h3>🧩 The Problem</h3>
+                        <p>
+                            The core question behind Renegade was:
+                        </p>
+                        <p>
+                            <em>
+                                “How can we build a small but complete custom engine that supports an arcade bullet hell—rendering, audio,
+                                level logic, and AI—while still being maintainable, debuggable, and performant enough to handle heavy
+                                projectile patterns and boss behaviors?”
+                            </em>
+                        </p>
+                        <h4>Key challenges:</h4>
+                        <ul>
+                            <li>Integrating Vulkan-based rendering in a way that stayed flexible for 2D/“top-down” style visuals</li>
+                            <li>Designing a data flow that cleanly separated engine systems from game logic</li>
+                            <li>Implementing a dynamic audio system that responded to gameplay states (boss phases, damage, victory, etc.)</li>
+                            <li>Authoring boss and enemy behaviors without a full editor stack</li>
+                            <li>Managing many simultaneous projectiles and boids without frame hitches</li>
+                        </ul>
+
+                        <h3>🛠️ What I Built</h3>
+                        <ul>
+                            <li>
+                                <strong>Engine texture integration</strong> – Implemented texture loading and management in the engine, including:
+                                <ul>
+                                    <li>Texture resource creation and lifetime handling for Vulkan</li>
+                                    <li>Basic sprite/quad rendering pipeline for top-down assets</li>
+                                    <li>Support for multiple texture assets (player, enemies, UI, backgrounds)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Engine shader integration</strong> – Wired up the Vulkan shader pipeline:
+                                <ul>
+                                    <li>Shader module loading/compilation and pipeline state setup</li>
+                                    <li>Simple but clean material/shader parameter flows for sprites and effects</li>
+                                    <li>Configuration to support different render passes (gameplay, UI)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Engine level integration</strong> – Built the basic level logic layer:
+                                <ul>
+                                    <li>Level data integration (spawn timing, enemy waves, boss entry)</li>
+                                    <li>Scene update loop that ties together input, AI, physics-lite motion, and rendering</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Dynamic audio system</strong> – Integrated the engine audio layer and tied it to game state:
+                                <ul>
+                                    <li>Support for music + SFX channels and simple mixing</li>
+                                    <li>Events for boss phases, player hit, death, and victory states</li>
+                                    <li>Reactive audio feedback for bullet patterns and high-intensity moments</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>AI & boss systems</strong> – Implemented enemy and boss logic:
+                                <ul>
+                                    <li>Boss phase system with distinct patterns per phase</li>
+                                    <li>Pattern-based projectile emission for bullet hell attacks</li>
+                                    <li>Basic state-driven behavior for movement, aggression, and vulnerability windows</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Boid system for flocking agents</strong> – Implemented flocking enemies:
+                                <ul>
+                                    <li>Steering behaviors (cohesion, separation, alignment-style logic)</li>
+                                    <li>Integration with bullet patterns to create “screens full” of moving threats</li>
+                                    <li>Performance-conscious updates to keep flock movement smooth</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h3>🎨 Design & Technical Principles</h3>
+                        <ul>
+                            <li><strong>Engine-first thinking</strong> – Every feature (AI, bullets, audio) was treated as a system plugged into a clean engine loop.</li>
+                            <li><strong>Deterministic, pattern-based combat</strong> – Enemy and boss attacks are predictable but challenging, encouraging learning and mastery.</li>
+                            <li><strong>Responsiveness over complexity</strong> – Controls and feedback were prioritized, especially hit reactions, damage cues, and clarity of projectiles.</li>
+                            <li><strong>Debuggability</strong> – Code was structured to make it straightforward to change patterns, timing, and enemy behaviors without a full editor.</li>
+                        </ul>
+
+                        <h3>✅ Outcome</h3>
+                        <ul>
+                            <li>Delivered a playable, complete bullet hell experience on top of a custom C/C++ engine.</li>
+                            <li>Demonstrated practical Vulkan rendering integration in a game context.</li>
+                            <li>Built a foundation engine that could be extended with additional levels, patterns, or tools.</li>
+                            <li>Provided a strong portfolio example of low-level engine work plus gameplay systems (AI, audio, level flow).</li>
+                        </ul>
+
+                        <h3>⚙️ Tools & Technologies</h3>
+                        <ul>
+                            <li>Custom C / C++ game engine</li>
+                            <li>Vulkan rendering API</li>
+                            <li>Custom texture, shader, and level integration systems</li>
+                            <li>Custom audio system (music + SFX, state-driven)</li>
+                            <li>GitHub for version control and collaboration</li>
+                        </ul>
+                    </div>
+
+                    <div class="portfolio-links">
+                        <a href="https://github.com/Anthony-Halstead/Renegade" target="_blank" class="portfolio-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                            GitHub Repository
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mesh Forge Details -->
+                <div class="project-details" data-project="mesh forge">
+                    <div class="project-header">
+                        <img src="images/MeshForgeIcon.png" alt="MeshForge">
+                        <div>
+                            <h2>MeshForge – Modular Character Editor</h2>
+                            <div class="tags">
+                                <span class="tag">Unity3D</span>
                                 <span class="tag">Tool</span>
                             </div>
                         </div>
@@ -141,20 +602,19 @@
                                 <div class="gallery-view" style="flex: 1 1 0; display: flex; align-items: center; justify-content: center; min-width: 0;">
                                     <!-- Gallery items: images and videos -->
                                     <div class="gallery-item" data-type="video" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <iframe src="https://www.youtube.com/embed/th1fw4S07NQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; aspect-ratio: 16/9; object-fit: contain; border-radius: 12px; background: #181824;"></iframe>
+                                        <iframe src="https://www.youtube.com/embed/xsFc-qszDfM"
+                                                title="MeshForge overview"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                style="width: 100%; aspect-ratio: 16/9; object-fit: contain; border-radius: 12px; background: #181824;">
+                                        </iframe>
                                     </div>
-                                    <div class="gallery-item" data-type="image" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <img src="/images/NeptuneBuoyancy.png" alt="Neptune Buoyancy" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+                                    <div class="gallery-item" data-type="image" style="display:block; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
+                                        <img src="images/MeshForgeCover.png" alt="MeshForge Screenshot 1" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
                                     </div>
-                                    <div class="gallery-item" data-type="image" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <img src="/images/NeptuneDF.png" alt="Neptune Distance Field" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
-                                    </div>
-                                    <div class="gallery-item" data-type="image" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <img src="/images/NeptunePP.png" alt="Neptune Post Process" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
-                                    </div>
-                                    <div class="gallery-item" data-type="image" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <img src="/images/NeptuneWaterline.png" alt="Neptune Waterline" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
-                                    </div>
+                                    <!-- Add more images/videos as needed -->
                                 </div>
                                 <button class="gallery-btn next-btn" aria-label="Next" style="background: none; border: none; cursor: pointer; padding: 0 8px; height: 48px; display: flex; align-items: center;">
                                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#6e8efb"><polyline points="9 6 15 12 9 18"></polyline></svg>
@@ -163,249 +623,158 @@
                             <!-- Thumbnails Bar -->
                             <div class="gallery-thumbnails" style="display: flex; justify-content: center; gap: 12px; margin-top: 8px;">
                                 <div class="gallery-thumbnail" data-index="0" data-type="video" style="position: relative;">
-                                    <img src="/images/NeptuneCover.png" alt="Video Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
+                                    <img src="images/MeshForgeIcon.png" alt="Video Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
+                                    <!-- Play button overlay -->
                                     <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;">
                                         <svg width="32" height="32" viewBox="0 0 32 32" fill="white" style="filter: drop-shadow(0 1px 4px rgba(0,0,0,0.5)); opacity: 0.85;">
-                                            <circle cx="16" cy="16" r="14" fill="rgba(0,0,0,0.45)"/>
-                                            <polygon points="13,10 23,16 13,22" fill="white"/>
+                                            <circle cx="16" cy="16" r="14" fill="rgba(0,0,0,0.45)" />
+                                            <polygon points="13,10 23,16 13,22" fill="white" />
                                         </svg>
                                     </span>
                                 </div>
-                                <div class="gallery-thumbnail" data-index="3" data-type="image">
-                                    <img src="/images/NeptuneBuoyancy.png" alt="Neptune Buoyancy Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
+                                <div class="gallery-thumbnail" data-index="1" data-type="image">
+                                    <img src="images/MeshForgeCover.png" alt="Image Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
                                 </div>
-                                <div class="gallery-thumbnail" data-index="4" data-type="image">
-                                    <img src="/images/NeptuneDF.png" alt="Neptune Distance Field Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
-                                </div>
-                                <div class="gallery-thumbnail" data-index="5" data-type="image">
-                                    <img src="/images/NeptunePP.png" alt="Neptune Post Process Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
-                                </div>
-                                <div class="gallery-thumbnail" data-index="6" data-type="image">
-                                    <img src="/images/NeptuneWaterline.png" alt="Neptune Waterline Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
-                                </div>
+                                <!-- Add more thumbnails as needed, matching gallery items above -->
                             </div>
                         </div>
                     </div>
                     <div class="project-full-description">
                         <h3>🎯 Project Overview</h3>
-                        <p>Neptune is an advanced ocean and water system for Unreal Engine 5, developed as the core technical art feature for a 30-person collaborative game project. Built over 6 weeks, it was designed to deliver realistic oceans, rivers, lakes, and waterfalls with high visual fidelity and gameplay responsiveness. My role as Senior Technical Artist included system design, prototyping, cross-team integration, and technical documentation.</p>
+                        <p>
+                            MeshForge is a Unity editor toolkit for turning existing skinned and static meshes into modular, reusable building blocks.
+                            It’s aimed at developers and technical artists who don’t live in DCC tools all day, but still need flexible character and
+                            environment modularity. The suite bundles several tightly integrated tools—Mesh Rebaker, Splitter, Gap Filler, Skinned Mesh
+                            Combiner, and the newer Topology Splitter—into a non-destructive workflow that runs entirely inside the Unity Editor.
+                        </p>
+                        <p>
+                            The asset is compatible with Unity 2021 LTS through Unity 6, supports all major render pipelines, and has been iteratively
+                            shipped and updated on the Unity Asset Store (v1.2.0 as of April 2025).
+                        </p>
 
                         <h3>🧩 The Problem</h3>
-                        <p>"How can a water system in Unreal Engine 5 deliver both visual realism and gameplay flexibility, supporting dynamic environments, buoyancy, and underwater effects, while remaining performant and easy to integrate for artists and designers?"</p>
+                        <p>
+                            Most small teams and solo devs don’t have time to constantly go back into Blender/Maya just to test a new armor variant,
+                            swap a character’s head, or break a static mesh into modular kit pieces. I built MeshForge to answer:
+                        </p>
+                        <p>
+                            <em>
+                                “How can Unity developers quickly modularize skinned and static meshes—without deep 3D modeling skills—while preserving rigging,
+                                materials, and animation fidelity, and keeping the workflow safe and non-destructive?”
+                            </em>
+                        </p>
+                        <h4>Key challenges:</h4>
                         <ul>
-                            <h4>Key challenges:</h4>
-                            <ul>
-                                <li>Achieving realistic wave simulation and water interaction</li>
-                                <li>Supporting buoyancy and underwater rendering</li>
-                                <li>Integrating with level design and gameplay systems</li>
-                                <li>Maintaining performance and scalability</li>
-                                <li>Providing customization for different water types</li>
-                            </ul>
+                            <li>Preserving skin weights, bone influences, and animation behavior when splitting skinned meshes</li>
+                            <li>Handling meshes with multiple submeshes and materials without breaking existing setups</li>
+                            <li>Supporting both skinned and static meshes in a single, coherent workflow</li>
+                            <li>Filling open gaps cleanly while keeping UVs and materials consistent</li>
+                            <li>Keeping everything non-destructive so artists never have to re-import “ruined” assets</li>
+                            <li>Designing algorithms that can later be migrated to Jobs/Burst for future runtime use</li>
+                            <li>Maintaining compatibility across multiple Unity versions and render pipelines</li>
                         </ul>
 
                         <h3>🛠️ What I Built</h3>
                         <ul>
-                            <li>Gerstner wave simulation with dynamic parameters</li>
-                            <li>Full buoyancy support for floating actors and gameplay objects</li>
-                            <li>Underwater rendering, fog, and caustics</li>
-                            <li>Stencil mask system to prevent water inside boats</li>
-                            <li>Spline-based river creation with custom flow and foam</li>
-                            <li>Dynamic foam and wet sand shader for shoreline effects</li>
-                            <li>Wave resistance and interaction with static/dynamic bodies</li>
-                            <li>Water depth coloring, refraction distortion, and fake subsurface scattering (SSS)</li>
-                            <li>Custom waterfall actor with noise blending</li>
-                            <li>Tile repeat solver to reduce tiling artifacts</li>
-                            <li>Highly customizable via material instances and exposed parameters</li>
+                            <li>
+                                <strong>Mesh Rebaker</strong> – Rebuilds meshes into Unity’s coordinate space from a prefab reference, giving cleaner,
+                                predictable geometry as a foundation for further edits.
+                            </li>
+                            <li>
+                                <strong>Splitter</strong> – Core tool that splits both skinned and static meshes into modular parts.
+                                For skinned meshes it:
+                                <ul>
+                                    <li>Extracts each logical part into its own skinned mesh while preserving skin weights and animation behavior</li>
+                                    <li>Supports submesh extraction so material assignments remain intact</li>
+                                    <li>Includes experimental deformation options to resize parts to match different character scales (e.g., small → large rigs)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Gap Filler</strong> – Fills holes left after splitting by selecting boundary vertices and procedurally generating
+                                new triangles. Supports “fan” (flat) and convex fill modes, reusing the original material or a user-specified override.
+                            </li>
+                            <li>
+                                <strong>Skinned Mesh Combiner</strong> – Recombines previously split parts back into a single skinned mesh. Useful for
+                                baking down finalized variants or reducing draw calls after experimentation.
+                            </li>
+                            <li>
+                                <strong>Topology Splitter (v1.2.0)</strong> – A topology-aware static mesh splitter that analyzes connected components and
+                                lets users group, merge, and cap specific parts. This is especially useful for environment meshes and intricate props.
+                            </li>
+                            <li>
+                                <strong>Non-destructive workflow</strong> – All operations work on instances or duplicated assets, keeping the original
+                                files intact so users can experiment freely without re-importing content.
+                            </li>
+                            <li>
+                                <strong>Editor-focused UX</strong> – Contextual inspector UI, drag-select support, and clear feedback for long-running
+                                operations; plus documentation, tutorial videos, and a Discord community for support.
+                            </li>
                         </ul>
 
-                        <h3>🎨 Technical & Visual Principles Applied</h3>
+                        <h3>🎨 Technical & Design Principles Applied</h3>
                         <ul>
-                            <li>Physically-based shading for water and foam</li>
-                            <li>Procedural generation for waves and river flow</li>
-                            <li>Optimized shader and blueprint architecture for real-time performance</li>
-                            <li>Layered effects for clarity and visual appeal</li>
-                            <li>Modular design for easy integration and expansion</li>
+                            <li>
+                                <strong>Topology-driven operations</strong> – Many features are built around understanding mesh connectivity so that parts
+                                can be separated or grouped in predictable, artist-friendly ways.
+                            </li>
+                            <li>
+                                <strong>Data-preserving edits</strong> – Careful handling of vertex indices, bone weights, bindposes, and UVs to maintain
+                                animation fidelity and texture alignment after splitting or filling.
+                            </li>
+                            <li>
+                                <strong>Non-destructive editor tooling</strong> – All tools are designed so they never overwrite the source asset, encouraging
+                                experimentation and iteration without fear of losing work.
+                            </li>
+                            <li>
+                                <strong>Performance-aware architecture</strong> – Core algorithms are structured to be portable to Unity’s C# Job System
+                                and Burst compiler so that future runtime variants can scale to larger scenes and more complex meshes.
+                            </li>
+                            <li>
+                                <strong>Robust version & pipeline support</strong> – Targeting Unity 2021 LTS–Unity 6 with attention to editor API changes
+                                (e.g., drag-select behavior differences in pre-2022 versions) and compatibility with Built-in, URP, and HDRP.
+                            </li>
                         </ul>
 
                         <h3>✅ Outcome</h3>
                         <ul>
-                            <li>Delivered a robust water system used across all game levels</li>
-                            <li>Enabled artists and designers to easily customize water features</li>
-                            <li>Improved gameplay clarity and visual quality</li>
-                            <li>Provided technical documentation and training for the team</li>
+                            <li>
+                                Shipped MeshForge as a production-ready Unity Editor extension on the Unity Asset Store, iterating up to v1.2.0 with
+                                new features like Topology Splitter and improved static mesh support.
+                            </li>
+                            <li>
+                                Enabled developers to convert existing character and environment assets into modular kits without needing to open a DCC tool,
+                                improving iteration speed for prototyping, customization, and content variation.
+                            </li>
+                            <li>
+                                Built a toolset that is already in active use by other Unity developers and favorited by multiple users on the store,
+                                providing a concrete example of a shipped, maintained, commercial-grade tool.
+                            </li>
+                            <li>
+                                Established a foundation for future runtime mesh operations (splitting, filling, and morphing) informed by real-world user
+                                feedback through documentation, tutorials, and a dedicated Discord community.
+                            </li>
                         </ul>
 
                         <h3>⚙️ Tools & Technologies</h3>
                         <ul>
-                            <li>Unreal Engine 5 (Materials, Blueprints, Niagara FX)</li>
-                            <li>Blender for mesh and asset creation</li>
-                            <li>Photoshop/Substance Designer for textures</li>
-                            <li>Git for version control</li>
+                            <li>Unity Editor (2021 LTS – Unity 6, Built-in / URP / HDRP)</li>
+                            <li>C# (editor tooling, mesh manipulation, custom inspector workflows)</li>
+                            <li>Unity’s Mesh, SkinnedMeshRenderer, and ScriptableObject APIs</li>
+                            <li>Prefabs & asset pipeline integration for safe, non-destructive editing</li>
+                            <li>Git / GitHub for version control and release management</li>
+                            <li>Unity Asset Store for distribution, updates, and user feedback</li>
+                            <li>Planned: C# Job System + Burst for future runtime-focused features</li>
                         </ul>
                     </div>
                     <div class="portfolio-links">
-                        <a href="#" class="portfolio-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/>
+                        <a href="https://carryforgestudio.com/" target="_blank" class="portfolio-btn">
+                            <svg xmlns="" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                             </svg>
-                            Artstation
+                            Website
                         </a>
                     </div>
                 </div>
-        
-                <div class="project-details" data-project="adaptik">
-                    <div class="project-header">
-                        <img src="/images/AdaptikIcon.png" alt="ADAPTIK">
-                        <div>
-                            <h2>ADAPTIK</h2>
-                            <div class="tags">
-                                <span class="tag">Unreal Engine</span>
-                                <span class="tag">Procedural Tool</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallery-container">
-                        <div class="gallery-flex" style="display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto 32px auto; gap: 16px; flex-direction: column;">
-                            <div style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 16px;">
-                                <button class="gallery-btn prev-btn" aria-label="Previous" style="background: none; border: none; cursor: pointer; padding: 0 8px; height: 48px; display: flex; align-items: center;">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#6e8efb"><polyline points="15 18 9 12 15 6"></polyline></svg>
-                                </button>
-                                <div class="gallery-view" style="flex: 1 1 0; display: flex; align-items: center; justify-content: center; min-width: 0;">
-                                    <div class="gallery-item" data-type="video" style="display:block; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <iframe src="https://www.youtube.com/embed/iTTy5FUacPo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; aspect-ratio: 16/9; object-fit: contain; border-radius: 12px; background: #181824;"></iframe>
-                                    </div>
-                                    <div class="gallery-item" data-type="image" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <img src="/images/AdaptikTruck.png" alt="ADAPTIK Screenshot 2" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
-                                    </div>
-                                    <div class="gallery-item" data-type="image" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <img src="/images/AdaptikWire.png" alt="ADAPTIK Screenshot 3" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
-                                    </div>
-                                    <div class="gallery-item" data-type="image" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <img src="/images/AdaptikTable.png" alt="ADAPTIK Screenshot 4" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
-                                    </div>
-                                    <div class="gallery-item" data-type="image" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <img src="/images/AdaptikSidewalk.png" alt="ADAPTIK Screenshot 5" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
-                                    </div>
-                                    <div class="gallery-item" data-type="image" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <img src="/images/AdaptikPL.png" alt="ADAPTIK Screenshot 6" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
-                                    </div>
-                                    <div class="gallery-item" data-type="image" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <img src="/images/AdaptikCR.png" alt="ADAPTIK Screenshot 7" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
-                                    </div>
-                                </div>
-                                <button class="gallery-btn next-btn" aria-label="Next" style="background: none; border: none; cursor: pointer; padding: 0 8px; height: 48px; display: flex; align-items: center;">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#6e8efb"><polyline points="9 6 15 12 9 18"></polyline></svg>
-                                </button>
-                            </div>
-                            <div class="gallery-thumbnails" style="display: flex; justify-content: center; gap: 12px; margin-top: 8px;">
-                                <div class="gallery-thumbnail" data-index="0" data-type="video" style="position: relative;">
-                                    <img src="/images/AdaptikIcon.png" alt="Video Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
-                                    <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;">
-                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="white" style="filter: drop-shadow(0 1px 4px rgba(0,0,0,0.5)); opacity: 0.85;">
-                                            <circle cx="16" cy="16" r="14" fill="rgba(0,0,0,0.45)"/>
-                                            <polygon points="13,10 23,16 13,22" fill="white"/>
-                                        </svg>
-                                    </span>
-                                </div>
-                                <div class="gallery-thumbnail" data-index="2" data-type="image">
-                                    <img src="/images/AdaptikTruck.png" alt="Adaptik Thumb 2" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
-                                </div>
-                                <div class="gallery-thumbnail" data-index="3" data-type="image">
-                                    <img src="/images/AdaptikWire.png" alt="Adaptik Thumb 3" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
-                                </div>
-                                <div class="gallery-thumbnail" data-index="4" data-type="image">
-                                    <img src="/images/AdaptikTable.png" alt="Adaptik Thumb 4" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
-                                </div>
-                                <div class="gallery-thumbnail" data-index="5" data-type="image">
-                                    <img src="/images/AdaptikSidewalk.png" alt="Adaptik Thumb 5" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
-                                </div>
-                                <div class="gallery-thumbnail" data-index="6" data-type="image">
-                                    <img src="/images/AdaptikPL.png" alt="Adaptik Thumb 6" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
-                                </div>
-                                <div class="gallery-thumbnail" data-index="7" data-type="image">
-                                    <img src="/images/AdaptikCR.png" alt="Adaptik Thumb 7" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-full-description">
-                        <h3>About the Project</h3>
-                        <p>This final year project focused on developing an advanced procedural animation system for quadrupedal characters using Unreal Engine 5's Control Rig system. The research explored the creation of realistic, adaptive locomotion that responds dynamically to terrain variations and environmental constraints. By combining biomechanical principles with modern animation techniques, the project demonstrates how procedural systems can create more believable and efficient quadruped movement compared to traditional keyframe animation approaches.</p>
-                        
-                        <h3>Key Features</h3>
-                        <ul>
-                            <li>Advanced Control Rig implementation with custom bone chains and constraint systems for realistic quadruped locomotion</li>
-                            <li>Procedural gait generation system supporting walk, trot, canter, and gallop gaits with smooth transitions</li>
-                            <li>Intelligent terrain adaptation using inverse kinematics to adjust leg positioning for uneven surfaces</li>
-                            <li>Real-time foot placement system with raycast-based ground detection and collision avoidance</li>
-                            <li>Dynamic weight distribution calculations affecting body posture and movement timing</li>
-                            <li>Customizable animation parameters allowing for different quadruped species and body types</li>
-                            <li>Performance optimization ensuring real-time execution suitable for interactive applications</li>
-                            <li>Comprehensive evaluation framework comparing procedural vs. traditional animation quality</li>
-                        </ul>
-
-                        <h3>Technical Highlights</h3>
-                        <ul>
-                            <li>Custom Control Rig blueprint architecture with modular components for different body segments and limb chains</li>
-                            <li>Advanced IK solver implementation using FABRIK algorithm optimized for quadruped leg configurations</li>
-                            <li>Real-time biomechanical simulation incorporating center of mass calculations and stability analysis</li>
-                            <li>Procedural spine curvature system responding to terrain slope and movement dynamics</li>
-                            <li>Multi-threaded animation evaluation system for performance optimization</li>
-                            <li>Data-driven approach using motion capture reference data for gait validation and tuning</li>
-                        </ul>
-
-                        <h3>Development Process</h3>
-                        <p>The project was developed over 4 months as part of my final year dissertation, combining extensive research into quadruped biomechanics with practical implementation in Unreal Engine 5. The development process involved literature review, iterative prototyping, and comprehensive evaluation against traditional animation methods.</p>
-                        
-                        <h4>Development Timeline</h4>
-                        <ul>
-                            <li>Month 1: Literature review, biomechanical research, and initial Control Rig setup</li>
-                            <li>Month 2: Core procedural animation system development and basic gait implementation</li>
-                            <li>Month 3: Advanced features including terrain adaptation and IK refinement</li>
-                            <li>Month 4: Optimization, evaluation, and dissertation writing</li>
-                        </ul>
-
-                        <h4>Key Challenges</h4>
-                        <ul>
-                            <li>Implementing realistic quadruped biomechanics within Control Rig's constraint system</li>
-                            <li>Achieving stable foot placement on complex terrain geometries</li>
-                            <li>Balancing animation quality with real-time performance requirements</li>
-                            <li>Developing evaluation metrics to quantify procedural animation effectiveness</li>
-                        </ul>
-
-                        <h4>Research Methodology</h4>
-                        <ul>
-                            <li>Comprehensive literature review of quadruped locomotion and procedural animation techniques</li>
-                            <li>Iterative development approach with regular testing and refinement</li>
-                            <li>Quantitative evaluation using motion analysis and performance metrics</li>
-                            <li>Comparative study against traditional keyframe animation workflows</li>
-                        </ul>
-
-                        <h4>Tools & Technologies</h4>
-                        <ul>
-                            <li>Unreal Engine 5 with Control Rig system for animation development</li>
-                            <li>Blender for quadruped model creation and rigging</li>
-                            <li>Motion capture data analysis tools for reference validation</li>
-                            <li>Git for version control and project management</li>
-                            <li>LaTeX for dissertation documentation</li>
-                        </ul>
-                    </div>
-                    <div class="portfolio-links">
-                        <a href="docs/other/Realtime Procedural IK Animation.docx" target="_blank" class="portfolio-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/>
-                            </svg>
-                            Dissertation
-                        </a>
-                        <a href="https://github.com/yourusername/quadruped-procedural-animation" target="_blank" class="portfolio-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                            GitHub Repository
-                        </a>
-                    </div>
-                </div>
-          
 
             </div>
         </div>
