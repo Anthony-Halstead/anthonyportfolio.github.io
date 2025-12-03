@@ -53,7 +53,7 @@
                     <div class="profile-info">
                         <h1>Anthony Halstead</h1>
                         <div class="pronouns"></div>
-                        <p>BSc. Game Development Student @ Full Sail University| Aspiring Game Developer</p>
+                        <p>BSc. Game Development @ Full Sail University | Aspiring Game Developer</p>
                     </div>
                 </div>
                 
@@ -92,7 +92,6 @@
             <div class="projects-header">
                 <div>
                     <h2>Featured Projects</h2>
-                    <p>A showcase of my work</p>
                 </div>
                 <a href="portfolio.html" class="view-all-btn">
                     View all projects
@@ -101,54 +100,23 @@
                         <path d="m12 5 7 7-7 7"></path>
                     </svg>
                 </a>
-            </div>
-            
+            </div>   
             <div class="projects-grid">
-                <div class="project-card project-1" data-project="adaptik">
+                <!-- Mesh Forge Featured Project -->
+                <div class="project-card project-1" data-project="mesh forge">
                     <div class="project-image-container">
-                        <img src="/images/AdaptikCover.png" alt="ADAPTIK">
+                        <img src="/images/MeshForgeCover.png" alt="Untitled FPS">
                     </div>
                     <div class="project-info">
                         <div class="project-tags">
-                            <div class="project-tag">Unreal Engine</div>
-                            <div class="project-tag">Procedural Tool</div>
+                            <div class="project-tag">Unity3D</div>
+                            <div class="project-tag">Tools</div>
+                            <div class="project-tag">C#</div>
                         </div>
-                        <h3>ADAPTIK</h3>
-                        <p>Procedural quadruped locomotion for Unreal Engine 5, featuring dynamic gait transitions, terrain adaptation, and biomechanical IK for realistic movement.</p>
+                        <h3>MeshForge</h3>
+                        <p>MeshForge is a tool aimed to bridge the gap between those with little to no experience in 3D modeling and the ability to create modular characters and meshes.</p>
                     </div>
                 </div>
-                
-                <!-- Neptune Ocean System Featured Project -->
-                <div class="project-card project-2" data-project="neptune">
-                    <div class="project-image-container">
-                        <img src="/images/NeptuneCover.png" alt="Neptune Ocean System">
-                    </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <div class="project-tag">Unreal Engine</div>
-                            <div class="project-tag">Technical Art</div>
-                            <div class="project-tag">Tool</div>
-                        </div>
-                        <h3>Neptune</h3>
-                        <p>Advanced ocean system for Unreal Engine 5 with Gerstner waves, buoyancy, underwater effects, and seafoam built for a collaborative student project.</p>
-                    </div>
-                </div>
-                
-                <div class="project-card project-3" data-project="emp-kunai">
-                    <div class="project-image-container">
-                        <img src="/images/KunaiEMPCover.png" alt="Toxic Shard">
-                    </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <div class="project-tag">Unreal Engine</div>
-                            <div class="project-tag">Niagara</div>
-                        </div>
-                        <h3>EMP Kunai</h3>
-                        <p>Stylized EMP kunai VFX for Unreal Engine 5, featuring dynamic projectile FX, EMP detonation, and modular blueprint integration.</p>
-                    </div>
-                </div>
-                
-               
             </div>
         </div>
     </div>
@@ -163,134 +131,14 @@
                 </svg>
             </button>
             <div class="modal-body">
-                <!-- Adaptik Details -->
-                <div class="project-details" data-project="adaptik">
+                <!-- Mesh Forge Details -->
+                <div class="project-details" data-project="mesh forge">
                     <div class="project-header">
-                        <img src="/images/AdaptikIcon.png" alt="ADAPTIK">
+                        <img src="/images/MeshForgeIcon.png" alt="MeshForge">
                         <div>
-                            <h2>ADAPTIK – Procedural Quadruped Locomotion System</h2>
+                            <h2>MeshForge – Modular Character Editor</h2>
                             <div class="tags">
-                                <span class="tag">Unreal Engine</span>
-                                <span class="tag">Procedural Tool</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallery-container">
-                        <div class="gallery-flex" style="display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto 32px auto; gap: 16px; flex-direction: column;">
-                            <div style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 16px;">
-                                <button class="gallery-btn prev-btn" aria-label="Previous" style="background: none; border: none; cursor: pointer; padding: 0 8px; height: 48px; display: flex; align-items: center;">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#6e8efb"><polyline points="15 18 9 12 15 6"></polyline></svg>
-                                </button>
-                                <div class="gallery-view" style="flex: 1 1 0; display: flex; align-items: center; justify-content: center; min-width: 0;">
-                                    <!-- Gallery items: images and videos -->
-                                    <div class="gallery-item" data-type="video" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <iframe src="https://www.youtube.com/embed/iTTy5FUacPo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; aspect-ratio: 16/9; object-fit: contain; border-radius: 12px; background: #181824;"></iframe>
-                                    </div>
-                                    <div class="gallery-item" data-type="image" style="display:block; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <img src="/images/AdaptikCover.png" alt="ADAPTIK Screenshot 1" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
-                                    </div>
-                                    <!-- Add more images/videos as needed -->
-                                </div>
-                                <button class="gallery-btn next-btn" aria-label="Next" style="background: none; border: none; cursor: pointer; padding: 0 8px; height: 48px; display: flex; align-items: center;">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#6e8efb"><polyline points="9 6 15 12 9 18"></polyline></svg>
-                                </button>
-                            </div>
-                            <!-- Thumbnails Bar -->
-                            <div class="gallery-thumbnails" style="display: flex; justify-content: center; gap: 12px; margin-top: 8px;">
-                                <div class="gallery-thumbnail" data-index="0" data-type="video" style="position: relative;">
-                                    <img src="/images/AdaptikIcon.png" alt="Video Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
-                                    <!-- Play button overlay -->
-                                    <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;">
-                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="white" style="filter: drop-shadow(0 1px 4px rgba(0,0,0,0.5)); opacity: 0.85;">
-                                            <circle cx="16" cy="16" r="14" fill="rgba(0,0,0,0.45)"/>
-                                            <polygon points="13,10 23,16 13,22" fill="white"/>
-                                        </svg>
-                                    </span>
-                                </div>
-                                <div class="gallery-thumbnail" data-index="1" data-type="image">
-                                    <img src="/images/AdaptikCover.png" alt="Image Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
-                                </div>
-                                <!-- Add more thumbnails as needed, matching gallery items above -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-full-description">
-                        <h3>🎯 Project Overview</h3>
-                        <p>ADAPTIK is an advanced procedural quadruped locomotion system for Unreal Engine 5, developed as a final year dissertation project. It leverages Control Rig to create realistic, adaptive movement for quadrupedal characters, supporting dynamic gait transitions, terrain adaptation, and biomechanical IK. The system is designed for real-time performance and customizable for different species and body types.</p>
-
-                        <h3>🧩 The Problem</h3>
-                        <p>"How can a quadruped animation system in Unreal Engine 5 deliver biomechanically accurate, terrain-adaptive movement with smooth gait transitions, while remaining performant and easy to customize for different character rigs?"</p>
-                        <ul>
-                            <h4>Key challenges:</h4>
-                            <ul>
-                                <li>Implementing realistic quadruped biomechanics within Control Rig's constraint system</li>
-                                <li>Achieving stable foot placement on complex terrain geometries</li>
-                                <li>Balancing animation quality with real-time performance requirements</li>
-                                <li>Developing evaluation metrics to quantify procedural animation effectiveness</li>
-                            </ul>
-                        </ul>
-
-                        <h3>🛠️ What I Built</h3>
-                        <ul>
-                            <li>Custom Control Rig blueprint architecture for modular body segments and limb chains</li>
-                            <li>Procedural gait generation system supporting walk, trot, canter, and gallop with smooth transitions</li>
-                            <li>Intelligent terrain adaptation using IK and raycast-based ground detection</li>
-                            <li>Real-time foot placement and collision avoidance</li>
-                            <li>Dynamic weight distribution and body posture adjustment</li>
-                            <li>Customizable animation parameters for different quadruped species</li>
-                            <li>Performance optimization for real-time execution</li>
-                            <li>Evaluation framework comparing procedural vs. traditional animation</li>
-                        </ul>
-
-                        <h3>🎨 Technical & Visual Principles Applied</h3>
-                        <ul>
-                            <li>Biomechanical simulation with center of mass and stability analysis</li>
-                            <li>Procedural spine curvature responding to terrain slope and movement</li>
-                            <li>Multi-threaded animation evaluation for optimization</li>
-                            <li>Data-driven approach using motion capture reference data</li>
-                        </ul>
-
-                        <h3>✅ Outcome</h3>
-                        <ul>
-                            <li>Delivered a robust quadruped locomotion system for Unreal Engine 5</li>
-                            <li>Enabled animators and technical artists to create adaptive, realistic movement</li>
-                            <li>Provided technical documentation and evaluation metrics for future research</li>
-                        </ul>
-
-                        <h3>⚙️ Tools & Technologies</h3>
-                        <ul>
-                            <li>Unreal Engine 5 (Control Rig, Blueprints)</li>
-                            <li>Blender for model creation and rigging</li>
-                            <li>Motion capture data analysis tools</li>
-                            <li>Git for version control</li>
-                            <li>LaTeX for dissertation documentation</li>
-                        </ul>
-                    </div>
-                    <div class="portfolio-links">
-                        <a href="docs/other/Realtime Procedural IK Animation.docx" target="_blank" class="portfolio-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/>
-                            </svg>
-                            Dissertation
-                        </a>
-                        <a href="https://github.com/itspixxel/ADAPTIK" target="_blank" class="portfolio-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                            GitHub Repository
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Neptune Ocean System Details -->
-                <div class="project-details" data-project="neptune">
-                    <div class="project-header">
-                        <img src="/images/NeptuneCover.png" alt="Neptune Ocean System">
-                        <div>
-                            <h2>Neptune – Advanced Ocean System</h2>
-                            <div class="tags">
-                                <span class="tag">Unreal Engine</span>
-                                <span class="tag">Technical Art</span>
+                                <span class="tag">Unity3D</span>
                                 <span class="tag">Tool</span>
                             </div>
                         </div>
@@ -304,20 +152,12 @@
                                 <div class="gallery-view" style="flex: 1 1 0; display: flex; align-items: center; justify-content: center; min-width: 0;">
                                     <!-- Gallery items: images and videos -->
                                     <div class="gallery-item" data-type="video" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <iframe src="https://www.youtube.com/embed/th1fw4S07NQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; aspect-ratio: 16/9; object-fit: contain; border-radius: 12px; background: #181824;"></iframe>
+                                        <iframe src="https://www.youtube.com/watch?v=xsFc-qszDfM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; aspect-ratio: 16/9; object-fit: contain; border-radius: 12px; background: #181824;"></iframe>
                                     </div>
-                                    <div class="gallery-item" data-type="image" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <img src="/images/NeptuneBuoyancy.png" alt="Neptune Buoyancy" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+                                    <div class="gallery-item" data-type="image" style="display:block; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
+                                        <img src="/images/MeshForgeCover.png" alt="ADAPTIK Screenshot 1" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
                                     </div>
-                                    <div class="gallery-item" data-type="image" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <img src="/images/NeptuneDF.png" alt="Neptune Distance Field" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
-                                    </div>
-                                    <div class="gallery-item" data-type="image" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <img src="/images/NeptunePP.png" alt="Neptune Post Process" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
-                                    </div>
-                                    <div class="gallery-item" data-type="image" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <img src="/images/NeptuneWaterline.png" alt="Neptune Waterline" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
-                                    </div>
+                                    <!-- Add more images/videos as needed -->
                                 </div>
                                 <button class="gallery-btn next-btn" aria-label="Next" style="background: none; border: none; cursor: pointer; padding: 0 8px; height: 48px; display: flex; align-items: center;">
                                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#6e8efb"><polyline points="9 6 15 12 9 18"></polyline></svg>
@@ -326,132 +166,7 @@
                             <!-- Thumbnails Bar -->
                             <div class="gallery-thumbnails" style="display: flex; justify-content: center; gap: 12px; margin-top: 8px;">
                                 <div class="gallery-thumbnail" data-index="0" data-type="video" style="position: relative;">
-                                    <img src="/images/NeptuneCover.png" alt="Video Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
-                                    <!-- Play button overlay -->
-                                    <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;">
-                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="white" style="filter: drop-shadow(0 1px 4px rgba(0,0,0,0.5)); opacity: 0.85;">
-                                            <circle cx="16" cy="16" r="14" fill="rgba(0,0,0,0.45)"/>
-                                            <polygon points="13,10 23,16 13,22" fill="white"/>
-                                        </svg>
-                                    </span>
-                                </div>
-                                <div class="gallery-thumbnail" data-index="3" data-type="image">
-                                    <img src="/images/NeptuneBuoyancy.png" alt="Neptune Buoyancy Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
-                                </div>
-                                <div class="gallery-thumbnail" data-index="4" data-type="image">
-                                    <img src="/images/NeptuneDF.png" alt="Neptune Distance Field Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
-                                </div>
-                                <div class="gallery-thumbnail" data-index="5" data-type="image">
-                                    <img src="/images/NeptunePP.png" alt="Neptune Post Process Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
-                                </div>
-                                <div class="gallery-thumbnail" data-index="6" data-type="image">
-                                    <img src="/images/NeptuneWaterline.png" alt="Neptune Waterline Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-full-description">
-                        <h3>🎯 Project Overview</h3>
-                        <p>Neptune is an advanced ocean and water system for Unreal Engine 5, developed as the core technical art feature for a 30-person collaborative game project. Built over 6 weeks, it was designed to deliver realistic oceans, rivers, lakes, and waterfalls with high visual fidelity and gameplay responsiveness. My role as Senior Technical Artist included system design, prototyping, cross-team integration, and technical documentation.</p>
-
-                        <h3>🧩 The Problem</h3>
-                        <p>"How can a water system in Unreal Engine 5 deliver both visual realism and gameplay flexibility, supporting dynamic environments, buoyancy, and underwater effects, while remaining performant and easy to integrate for artists and designers?"</p>
-                        <ul>
-                            <h4>Key challenges:</h4>
-                            <ul>
-                                <li>Achieving realistic wave simulation and water interaction</li>
-                                <li>Supporting buoyancy and underwater rendering</li>
-                                <li>Integrating with level design and gameplay systems</li>
-                                <li>Maintaining performance and scalability</li>
-                                <li>Providing customization for different water types</li>
-                            </ul>
-                        </ul>
-
-                        <h3>🛠️ What I Built</h3>
-                        <ul>
-                            <li>Gerstner wave simulation with dynamic parameters</li>
-                            <li>Full buoyancy support for floating actors and gameplay objects</li>
-                            <li>Underwater rendering, fog, and caustics</li>
-                            <li>Stencil mask system to prevent water inside boats</li>
-                            <li>Spline-based river creation with custom flow and foam</li>
-                            <li>Dynamic foam and wet sand shader for shoreline effects</li>
-                            <li>Wave resistance and interaction with static/dynamic bodies</li>
-                            <li>Water depth coloring, refraction distortion, and fake subsurface scattering (SSS)</li>
-                            <li>Custom waterfall actor with noise blending</li>
-                            <li>Tile repeat solver to reduce tiling artifacts</li>
-                            <li>Highly customizable via material instances and exposed parameters</li>
-                        </ul>
-
-                        <h3>🎨 Technical & Visual Principles Applied</h3>
-                        <ul>
-                            <li>Physically-based shading for water and foam</li>
-                            <li>Procedural generation for waves and river flow</li>
-                            <li>Optimized shader and blueprint architecture for real-time performance</li>
-                            <li>Layered effects for clarity and visual appeal</li>
-                            <li>Modular design for easy integration and expansion</li>
-                        </ul>
-
-                        <h3>✅ Outcome</h3>
-                        <ul>
-                            <li>Delivered a robust water system used across all game levels</li>
-                            <li>Enabled artists and designers to easily customize water features</li>
-                            <li>Improved gameplay clarity and visual quality</li>
-                            <li>Provided technical documentation and training for the team</li>
-                        </ul>
-
-                        <h3>⚙️ Tools & Technologies</h3>
-                        <ul>
-                            <li>Unreal Engine 5 (Materials, Blueprints, Niagara FX)</li>
-                            <li>Blender for mesh and asset creation</li>
-                            <li>Photoshop/Substance Designer for textures</li>
-                            <li>Git for version control</li>
-                        </ul>
-                    </div>
-                    <div class="portfolio-links">
-                        <a href="#" class="portfolio-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/>
-                            </svg>
-                            See it in action →
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Toxic Shard Details -->
-                <div class="project-details" data-project="emp-kunai">
-                    <div class="project-header">
-                        <img src="/images/KunaiEMPIcon.png" alt="EMP Kunai">
-                        <div>
-                            <h2>EMP Kunai – Stylized Gameplay VFX System</h2>
-                            <div class="tags">
-                                <span class="tag">Unreal Engine</span>
-                                <span class="tag">Niagara VFX</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallery-container">
-                        <div class="gallery-flex" style="display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto 32px auto; gap: 16px; flex-direction: column;">
-                            <div style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 16px;">
-                                <button class="gallery-btn prev-btn" aria-label="Previous" style="background: none; border: none; cursor: pointer; padding: 0 8px; height: 48px; display: flex; align-items: center;">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#6e8efb"><polyline points="15 18 9 12 15 6"></polyline></svg>
-                                </button>
-                                <div class="gallery-view" style="flex: 1 1 0; display: flex; align-items: center; justify-content: center; min-width: 0;">
-                                    <!-- Gallery items: images and videos -->
-                                    <div class="gallery-item" data-type="video" style="display:block; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <iframe src="https://www.youtube.com/embed/PwMb2yd_A-o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; aspect-ratio: 16/9; object-fit: contain; border-radius: 12px; background: #181824;"></iframe>
-                                    </div>
-                                    <div class="gallery-item" data-type="image" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <img src="/images/KunaiEMPCover.png" alt="EMP Kunai Screenshot" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
-                                    </div>
-                                </div>
-                                <button class="gallery-btn next-btn" aria-label="Next" style="background: none; border: none; cursor: pointer; padding: 0 8px; height: 48px; display: flex; align-items: center;">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#6e8efb"><polyline points="9 6 15 12 9 18"></polyline></svg>
-                                </button>
-                            </div>
-                            <!-- Thumbnails Bar -->
-                            <div class="gallery-thumbnails" style="display: flex; justify-content: center; gap: 12px; margin-top: 8px;">
-                                <div class="gallery-thumbnail" data-index="0" data-type="video" style="position: relative;">
-                                    <img src="/images/KunaiEMPIcon.png" alt="Video Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
+                                    <img src="/images/MeshForgeIcon.png" alt="Video Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
                                     <!-- Play button overlay -->
                                     <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;">
                                         <svg width="32" height="32" viewBox="0 0 32 32" fill="white" style="filter: drop-shadow(0 1px 4px rgba(0,0,0,0.5)); opacity: 0.85;">
@@ -461,76 +176,148 @@
                                     </span>
                                 </div>
                                 <div class="gallery-thumbnail" data-index="1" data-type="image">
-                                    <img src="/images/KunaiEMPCover.png" alt="Image Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
+                                    <img src="/images/MeshForgeCover.png" alt="Image Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
                                 </div>
+                                <!-- Add more thumbnails as needed, matching gallery items above -->
                             </div>
                         </div>
                     </div>
                     <div class="project-full-description">
                         <h3>🎯 Project Overview</h3>
-                        <p>The EMP Kunai is a stylized gameplay VFX system designed for a third-person action character. Built in Unreal Engine 5, it showcases a throwable energy kunai that detonates with an area-of-effect EMP pulse, visually disabling nearby tech and enemies.
-                        <br>
-                        This system was created as part of an ongoing goal to build portfolio projects that solve real gameplay and visual communication problems—not just isolated effects.
+                        <p>
+                            MeshForge is a Unity editor toolkit for turning existing skinned and static meshes into modular, reusable building blocks.
+                            It’s aimed at developers and technical artists who don’t live in DCC tools all day, but still need flexible character and
+                            environment modularity. The suite bundles several tightly integrated tools—Mesh Rebaker, Splitter, Gap Filler, Skinned Mesh
+                            Combiner, and the newer Topology Splitter—into a non-destructive workflow that runs entirely inside the Unity Editor.
                         </p>
-                        
+                        <p>
+                            The asset is compatible with Unity 2021 LTS through Unity 6, supports all major render pipelines, and has been iteratively
+                            shipped and updated on the Unity Asset Store (v1.2.0 as of April 2025).
+                        </p>
+
                         <h3>🧩 The Problem</h3>
-                        <p>"How can I visually communicate a stylized EMP effect that clearly indicates damage, area of effect, and tech disruption while maintaining a cohesive animation and VFX flow?"</p>
+                        <p>
+                            Most small teams and solo devs don’t have time to constantly go back into Blender/Maya just to test a new armor variant,
+                            swap a character’s head, or break a static mesh into modular kit pieces. I built MeshForge to answer:
+                        </p>
+                        <p>
+                            <em>
+                                “How can Unity developers quickly modularize skinned and static meshes—without deep 3D modeling skills—while preserving rigging,
+                                materials, and animation fidelity, and keeping the workflow safe and non-destructive?”
+                            </em>
+                        </p>
+                        <h4>Key challenges:</h4>
                         <ul>
-                            <h4>Key challenges:</h4>
-                            <ul>
-                                <li>Making the effect readable in gameplay</li>
-                                <li>Syncing animation timing with VFX</li>
-                                <li>Creating clear enemy/tech state changes post-EMP</li>
-                                <li>Designing a system that’s reusable and optimized</li>
-                            </ul>
+                                <li>Preserving skin weights, bone influences, and animation behavior when splitting skinned meshes</li>
+                                <li>Handling meshes with multiple submeshes and materials without breaking existing setups</li>
+                                <li>Supporting both skinned and static meshes in a single, coherent workflow</li>
+                                <li>Filling open gaps cleanly while keeping UVs and materials consistent</li>
+                                <li>Keeping everything non-destructive so artists never have to re-import “ruined” assets</li>
+                                <li>Designing algorithms that can later be migrated to Jobs/Burst for future runtime use</li>
+                                <li>Maintaining compatibility across multiple Unity versions and render pipelines</li>                           
                         </ul>
 
                         <h3>🛠️ What I Built</h3>
                         <ul>
-                            <li>Projectile FX: Trail, throw arc, and charging core</li>
-                            <li>EMP Detonation: Expanding shockwave, distortion, dynamic electric arcs</li>
-                            <li>Target Reaction FX:
+                            <li>
+                                <strong>Mesh Rebaker</strong> – Rebuilds meshes into Unity’s coordinate space from a prefab reference, giving cleaner,
+                                predictable geometry as a foundation for further edits.
+                            </li>
+                            <li>
+                                <strong>Splitter</strong> – Core tool that splits both skinned and static meshes into modular parts.
+                                For skinned meshes it:
                                 <ul>
-                                    <li>Enemies: Sparks, flickers, smoke, and particles</li>
-                                    <li>Tech: Camera shakes, Stunned state in area of effect</li>
+                                    <li>Extracts each logical part into its own skinned mesh while preserving skin weights and animation behavior</li>
+                                    <li>Supports submesh extraction so material assignments remain intact</li>
+                                    <li>Includes experimental deformation options to resize parts to match different character scales (e.g., small → large rigs)</li>
                                 </ul>
-                            <li>Blueprint interface for easy integration</li>
+                            </li>
+                            <li>
+                                <strong>Gap Filler</strong> – Fills holes left after splitting by selecting boundary vertices and procedurally generating
+                                new triangles. Supports “fan” (flat) and convex fill modes, reusing the original material or a user-specified override.
+                            </li>
+                            <li>
+                                <strong>Skinned Mesh Combiner</strong> – Recombines previously split parts back into a single skinned mesh. Useful for
+                                baking down finalized variants or reducing draw calls after experimentation.
+                            </li>
+                            <li>
+                                <strong>Topology Splitter (v1.2.0)</strong> – A topology-aware static mesh splitter that analyzes connected components and
+                                lets users group, merge, and cap specific parts. This is especially useful for environment meshes and intricate props.
+                            </li>
+                            <li>
+                                <strong>Non-destructive workflow</strong> – All operations work on instances or duplicated assets, keeping the original
+                                files intact so users can experiment freely without re-importing content.
+                            </li>
+                            <li>
+                                <strong>Editor-focused UX</strong> – Contextual inspector UI, drag-select support, and clear feedback for long-running
+                                operations; plus documentation, tutorial videos, and a Discord community for support.
+                            </li>
                         </ul>
 
-                        <h3>🎨 Animation & Visual Principles Applied</h3>
+                        <h3>🎨 Technical & Design Principles Applied</h3>
                         <ul>
-                            <li>Anticipation and slow-in/out on projectile throw</li>
-                            <li>Arcs and follow-through on energy trails</li>
-                            <li>Appeal and timing to signal enemy state changes</li>
-                            <li>Layered VFX elements to support clarity in a stylized world</li>
+                            <li>
+                                <strong>Topology-driven operations</strong> – Many features are built around understanding mesh connectivity so that parts
+                                can be separated or grouped in predictable, artist-friendly ways.
+                            </li>
+                            <li>
+                                <strong>Data-preserving edits</strong> – Careful handling of vertex indices, bone weights, bindposes, and UVs to maintain
+                                animation fidelity and texture alignment after splitting or filling.
+                            </li>
+                            <li>
+                                <strong>Non-destructive editor tooling</strong> – All tools are designed so they never overwrite the source asset, encouraging
+                                experimentation and iteration without fear of losing work.
+                            </li>
+                            <li>
+                                <strong>Performance-aware architecture</strong> – Core algorithms are structured to be portable to Unity’s C# Job System
+                                and Burst compiler so that future runtime variants can scale to larger scenes and more complex meshes.
+                            </li>
+                            <li>
+                                <strong>Robust version & pipeline support</strong> – Targeting Unity 2021 LTS–Unity 6 with attention to editor API changes
+                                (e.g., drag-select behavior differences in pre-2022 versions) and compatibility with Built-in, URP, and HDRP.
+                            </li>
                         </ul>
 
                         <h3>✅ Outcome</h3>
-                        <h4>This project demonstrates how stylized gameplay VFX can be:</h4>
                         <ul>
-                            <li>Visually compelling</li>
-                            <li>Functionally readable</li>
-                            <li>Technically modular</li>
-                            <li>Rooted in animation principles</li>
+                            <li>
+                                Shipped MeshForge as a production-ready Unity Editor extension on the Unity Asset Store, iterating up to v1.2.0 with
+                                new features like Topology Splitter and improved static mesh support.
+                            </li>
+                            <li>
+                                Enabled developers to convert existing character and environment assets into modular kits without needing to open a DCC tool,
+                                improving iteration speed for prototyping, customization, and content variation.
+                            </li>
+                            <li>
+                                Built a toolset that is already in active use by other Unity developers and favorited by multiple users on the store,
+                                providing a concrete example of a shipped, maintained, commercial-grade tool.
+                            </li>
+                            <li>
+                                Established a foundation for future runtime mesh operations (splitting, filling, and morphing) informed by real-world user
+                                feedback through documentation, tutorials, and a dedicated Discord community.
+                            </li>
                         </ul>
-                        <p>It also serves as a prototype for ability design workflows in stylized action games.</p>
 
                         <h3>⚙️ Tools & Technologies</h3>
                         <ul>
-                            <li>Unreal Engine 5 Niagara for particle systems</li>
-                            <li>Blender for character modelling, rigging, and animating</li>
-                            <li>Substance Designer and Photoshop for texture creation</li>
+                            <li>Unity Editor (2021 LTS – Unity 6, Built-in / URP / HDRP)</li>
+                            <li>C# (editor tooling, mesh manipulation, custom inspector workflows)</li>
+                            <li>Unity’s Mesh, SkinnedMeshRenderer, and ScriptableObject APIs</li>
+                            <li>Prefabs & asset pipeline integration for safe, non-destructive editing</li>
+                            <li>Git / GitHub for version control and release management</li>
+                            <li>Unity Asset Store for distribution, updates, and user feedback</li>
+                            <li>Planned: C# Job System + Burst for future runtime-focused features</li>
                         </ul>
                     </div>
-                    <div class="portfolio-links">
-                        <a href="https://www.artstation.com/artwork/dyWeGe" class="portfolio-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M2 377.4l43 74.3A51.35 51.35 0 0 0 90.9 480h285.4l-59.2-102.6zM501.8 350L335.6 59.3A51.38 51.38 0 0 0 290.2 32h-88.4l257.3 447.6 40.7-70.5c1.9-3.2 21-29.7 2-59.1zM275 304.5l-115.5-200L44 304.5z"></path></svg>
-                            Artstation
+                    <div class="portfolio-links">                   
+                        <a href="https://carryforgestudio.com/" target="_blank" class="portfolio-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Website
                         </a>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
