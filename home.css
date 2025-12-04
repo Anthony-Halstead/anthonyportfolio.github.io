@@ -450,7 +450,7 @@ body {
 
 .profile-image {
     width: clamp(140px, 30%, 180px);
-    height: clamp(140px, 30%, 180px);
+    height: clamp(140px, 48%, 180px);
     border-radius: 50%;
     margin: 0 auto;
     margin-bottom: clamp(0.35rem, 1vw, 0.75rem);

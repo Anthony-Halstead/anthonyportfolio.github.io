@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\User\\GitPortfolio\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\GitPortfolio\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\GitPortfolio\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -22,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 213,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "home.css",
+              "DocumentMoniker": "C:\\Users\\User\\GitPortfolio\\home.css",
+              "RelativeDocumentMoniker": "home.css",
+              "ToolTip": "C:\\Users\\User\\GitPortfolio\\home.css",
+              "RelativeToolTip": "home.css",
+              "ViewState": "AgIAALMBAAAAAAAAAAAAAMQBAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-04T03:21:41.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "contact.html",
               "DocumentMoniker": "C:\\Users\\User\\GitPortfolio\\contact.html",
               "RelativeDocumentMoniker": "contact.html",
@@ -34,25 +51,24 @@
               "RelativeToolTip": "contact.html",
               "ViewState": "AgIAADAAAAAAAAAAAAAAAFkAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-12-03T08:14:07.896Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-03T08:14:07.896Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\User\\GitPortfolio\\index.html",
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\User\\GitPortfolio\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAwDcAAAB+AAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAwDcAAAB+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-12-03T04:47:24.907Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "portfolio.html",
               "DocumentMoniker": "C:\\Users\\User\\GitPortfolio\\portfolio.html",
               "RelativeDocumentMoniker": "portfolio.html",
@@ -60,8 +76,7 @@
               "RelativeToolTip": "portfolio.html",
               "ViewState": "AgIAAHIAAAAAAAAAAAAAwE8CAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-12-03T04:43:09.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-03T04:43:09.17Z"
             }
           ]
         }
