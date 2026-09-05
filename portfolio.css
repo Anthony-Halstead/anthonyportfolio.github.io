@@ -644,6 +644,17 @@ body {
             left: 0;
         }
 
+        .project-full-description a {
+            color: #6e8efb;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            transition: color 0.2s ease;
+        }
+
+            .project-full-description a:hover {
+                color: #fff;
+            }
+
 
 .projects-grid {
     display: grid;
@@ -816,6 +827,10 @@ body {
 
     .project-card:nth-child(5) {
         animation-delay: 1.4s;
+    }
+
+    .project-card:nth-child(6) {
+        animation-delay: 1.5s;
     }
 
 @keyframes fadeInUp {
