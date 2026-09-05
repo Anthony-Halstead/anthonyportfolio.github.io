@@ -344,29 +344,72 @@
                         <div class="gallery-flex" style="display: flex; align-items: center; justify-content: center; width: 100%; margin: 0 auto 32px auto; gap: 16px; flex-direction: column;">
                             <div style="display: flex; align-items: center; justify-content: center; width: 100%; gap: 16px;">
                                 <button class="gallery-btn prev-btn" aria-label="Previous" style="background: none; border: none; cursor: pointer; padding: 0 8px; height: 48px; display: flex; align-items: center;">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#6e8efb">
-                                        <polyline points="15 18 9 12 15 6"></polyline>
-                                    </svg>
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#6e8efb"><polyline points="15 18 9 12 15 6"></polyline></svg>
                                 </button>
-
                                 <div class="gallery-view" style="flex: 1 1 0; display: flex; align-items: center; justify-content: center; min-width: 0;">
-                                    <!-- Single gallery item: cover image -->
+                                    <!-- Gallery items: gameplay video and six screenshots -->
+                                    <div class="gallery-item" data-type="video" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
+                                        <iframe src="https://www.youtube.com/embed/E5TVn5uxuSE"
+                                                title="Murder At Hollowstone Manor gameplay"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                style="width: 100%; aspect-ratio: 16/9; object-fit: contain; border-radius: 12px; background: #181824;">
+                                        </iframe>
+                                    </div>
                                     <div class="gallery-item" data-type="image" style="display:block; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
-                                        <img src="images/MHMCover.png" alt="Murder At Hollowstone Manor Screenshot" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+                                        <img src="images/MHM1.jpg" alt="Murder At Hollowstone Manor Screenshot 1" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+                                    </div>
+                                    <div class="gallery-item" data-type="image" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
+                                        <img src="images/MHM2.jpg" alt="Murder At Hollowstone Manor Screenshot 2" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+                                    </div>
+                                    <div class="gallery-item" data-type="image" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
+                                        <img src="images/MHM3.jpg" alt="Murder At Hollowstone Manor Screenshot 3" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+                                    </div>
+                                    <div class="gallery-item" data-type="image" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
+                                        <img src="images/MHM4.jpg" alt="Murder At Hollowstone Manor Screenshot 4" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+                                    </div>
+                                    <div class="gallery-item" data-type="image" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
+                                        <img src="images/MHM5.jpg" alt="Murder At Hollowstone Manor Screenshot 5" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+                                    </div>
+                                    <div class="gallery-item" data-type="image" style="display:none; width: 100%; height: 100%; box-shadow: 0 2px 16px rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden; background: #181824;">
+                                        <img src="images/MHM6.jpg" alt="Murder At Hollowstone Manor Screenshot 6" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
                                     </div>
                                 </div>
-
                                 <button class="gallery-btn next-btn" aria-label="Next" style="background: none; border: none; cursor: pointer; padding: 0 8px; height: 48px; display: flex; align-items: center;">
-                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#6e8efb">
-                                        <polyline points="9 6 15 12 9 18"></polyline>
-                                    </svg>
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" color="#6e8efb"><polyline points="9 6 15 12 9 18"></polyline></svg>
                                 </button>
                             </div>
-
-                            <!-- Thumbnails Bar -->
-                            <div class="gallery-thumbnails" style="display: flex; justify-content: center; gap: 12px; margin-top: 8px;">
-                                <div class="gallery-thumbnail" data-index="0" data-type="image">
-                                    <img src="images/MHMCover.png" alt="Murder At Hollowstone Manor Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
+                            <!-- Thumbnails Bar (wraps so seven thumbnails fit on narrow screens) -->
+                            <div class="gallery-thumbnails" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 8px;">
+                                <div class="gallery-thumbnail" data-index="0" data-type="video" style="position: relative;">
+                                    <img src="images/MHMCover.png" alt="Video Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
+                                    <!-- Play button overlay -->
+                                    <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="white" style="filter: drop-shadow(0 1px 4px rgba(0,0,0,0.5)); opacity: 0.85;">
+                                            <circle cx="16" cy="16" r="14" fill="rgba(0,0,0,0.45)" />
+                                            <polygon points="13,10 23,16 13,22" fill="white" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="gallery-thumbnail" data-index="1" data-type="image">
+                                    <img src="images/MHM1.jpg" alt="Murder At Hollowstone Manor Screenshot 1 Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
+                                </div>
+                                <div class="gallery-thumbnail" data-index="2" data-type="image">
+                                    <img src="images/MHM2.jpg" alt="Murder At Hollowstone Manor Screenshot 2 Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
+                                </div>
+                                <div class="gallery-thumbnail" data-index="3" data-type="image">
+                                    <img src="images/MHM3.jpg" alt="Murder At Hollowstone Manor Screenshot 3 Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
+                                </div>
+                                <div class="gallery-thumbnail" data-index="4" data-type="image">
+                                    <img src="images/MHM4.jpg" alt="Murder At Hollowstone Manor Screenshot 4 Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
+                                </div>
+                                <div class="gallery-thumbnail" data-index="5" data-type="image">
+                                    <img src="images/MHM5.jpg" alt="Murder At Hollowstone Manor Screenshot 5 Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
+                                </div>
+                                <div class="gallery-thumbnail" data-index="6" data-type="image">
+                                    <img src="images/MHM6.jpg" alt="Murder At Hollowstone Manor Screenshot 6 Thumbnail" style="object-fit: cover; border-radius: 6px; background: #181824; aspect-ratio: 16/9;">
                                 </div>
                             </div>
                         </div>
